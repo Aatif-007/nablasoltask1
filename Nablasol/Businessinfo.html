@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create New Account</title>
+    <link rel="stylesheet" href="/styles/Business.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  </head>
+  <body>
+    <div class="top-header">
+      <h1>Business Information</h1>
+      <p>Contact Us</p>
+    </div>
+    <div class="container">
+      <div class="header">
+        <div class="steps">
+          <div class="active">Your Profile</div>
+          <div class="active-2">
+            Business Info
+          </div>
+          <div class="active-3" style="background-color: #e4deff">
+            Additional Info
+          </div>
+        </div>
+      </div>
+      <div class="hero-section">
+      <div class="mid">
+        <p class="mid-p">Step 2</p>
+        <h1>Business Information</h1>
+        <p>Please enter information about your company</p>
+      </div>
+      <div class="general direction"><p>GENERAL INFORMATION</p></div>
+      <form class="form" id="business-form">
+        <div class="form-group">
+          <label for="brand-name">Brand Name*</label>
+          <input
+            type="text"
+            id="brand-name"
+            placeholder="Input your Brand Name"
+            onfocus="style.border='1px solid #7DCEFA'"
+          />
+          <span class="error-message" id="brand-name-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="brand-type">Brand Type*</label>
+          <input
+            type="text"
+            id="brand-type"
+            placeholder="Select your brand type"
+            onfocus="style.border='1px solid #7DCEFA'"
+          />
+          <span class="error-message" id="brand-type-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="street-address">Street Addres*</label>
+          <input
+            type="email"
+            id="street-address"
+            placeholder="Input Your Street Address"
+            onfocus="style.border='1px solid #7DCEFA'"
+          />
+          <span class="error-message" id="street-address-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="city">City*</label>
+          <input
+            type="text"
+            id="city"
+            placeholder="Input Your city"
+            onfocus="style.border='1px solid #7DCEFA'"
+          />
+          <span class="error-message" id="city-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="zip-code">Zip Code*</label>
+          <input
+            type="number"
+            id="zip-code"
+            placeholder="Input your Zip code"
+            onfocus="style.border='1px solid #7DCEFA'"
+          />
+          <span class="error-message" id="zip-code-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="tax-id-number">Tax ID Number*</label>
+          <input
+            type="number"
+            id="tax-id-number"
+            placeholder="Input your tax id number"
+            onfocus="style.border='1px solid #7DCEFA'"
+          />
+          <span class="error-message" id="tax-id-number-error"></span>
+        </div>
+      </form>
+      <div class="docs-section">
+        <h1>DOCUMENTS</h1>
+        <p>
+          Once the following documents are signed,you'll be ready to get stared
+        </p>
+        <div class="document-1 signed">
+          <div class="document-name">
+            <p>Electronically sign the agreement(s)</p>
+            <div><i class="fa-solid fa-check"></i></div>
+          </div>
+          <button><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+        <div class="document-2 signed">
+          <div class="document-name">
+            <p>Non adult beverage kroger market supplier waiver and release</p>
+            <div class="cross"><i class="fa-solid fa-xmark"></i></div>
+          </div>
+          <button><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+      </div>
+      <div class="pdf-section">
+        <h1>COI PDF UPLOAD</h1>
+        <p>Once the following documents are signed,you'll be ready to get stared</p>
+        <div class="document-1 signed">
+            <div class="document-name">
+              <p>Electronically sign the agreement(s)</p>
+              <div><i class="fa-solid fa-check"></i></div>
+            </div>
+            <button><i class="fa-solid fa-angle-right"></i></button>
+          </div>
+      </div>
+    </div>
+</div>
+    <div class="footer">
+      <a onclick="window.location.reload()"
+        ><i class="fa-solid fa-angle-left"></i>Back to Login</a
+      >
+      <button onclick="previousStep()" class="previous-step"> <i class="fa-solid fa-angle-left"></i>Previous Step</button>
+      <button class="next-step" type="submit" onclick="validateForm()">Next Step <i class="fa-solid fa-angle-right"></i></button>
+    </div>
+  </body>
+  <script src="/js/business.js"></script>
+</html>
+
